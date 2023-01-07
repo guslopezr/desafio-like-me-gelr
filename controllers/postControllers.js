@@ -9,14 +9,14 @@ controller.index = () => {
 };
 
 controller.get = async(req, res) => {
-    const post = await recuperarPost();
+    const posts = await recuperarPost();
     res.json(posts);
 };
 
 controller.post = async(req, res) => {
     const { titulo, url, descripcion } = req.body;
-    await ingresarPost(titulo, url, descripcion);
-    res.send("Post agregado de forma exitosa");
+    const posts = await ingresarPost(titulo, url, descripcion);
+    res.json(posts);
 }
 
 controller.update = async(req, res) => {

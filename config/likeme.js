@@ -3,14 +3,14 @@ const { Pool } = require('pg')
 
 //Crear una instancia de la clase Pool usando un objeto de configuración con las credenciales.
 
-const credentials = ({
+const credentials = {
     host: 'postgresql-guslopezr.alwaysdata.net',
     user: 'guslopezr',
     password: 'Gus@0920',
     database: 'guslopezr_likeme',
     port: '5432',
     allowExitOnIdle: true
-})
+}
 
 const likemeDB = new Pool(credentials);
 
@@ -22,4 +22,4 @@ const getDate = async() => {
 }
 getDate()
 
-module.exports = credentials;
+module.exports = likemeDB;

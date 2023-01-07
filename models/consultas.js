@@ -1,6 +1,6 @@
 //acá se insertan los datos 
 
-const pool = require('../config/likeme.js')
+const likemeDB = require('../config/likeme.js')
 
 const ingresarPost = async(titulo, img, descripcion) => {
     const consulta = "INSERT INTO posts (titulo, img, descripcion) values ($1, $2, $3)";

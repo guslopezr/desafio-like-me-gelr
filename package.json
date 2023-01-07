@@ -14,5 +14,13 @@
     "pg": "^8.8.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guslopezr/desafio-like-me-gelr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guslopezr/desafio-like-me-gelr/issues"
+  },
+  "homepage": "https://github.com/guslopezr/desafio-like-me-gelr#readme",
   "description": ""
 }
